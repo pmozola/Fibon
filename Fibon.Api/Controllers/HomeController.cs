@@ -4,7 +4,7 @@ namespace Fibon.Api.Controllers
 {
     public class HomeController : Controller
     {
-    [HttpGet("")]
-      public IActionResult Get() => Content("Hello from Fibon Api!");
+        [HttpGet("")]
+        public IActionResult Get() => Content("Hello from Fibon Api!");
     }
 }

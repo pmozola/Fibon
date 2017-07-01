@@ -12,10 +12,17 @@
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="RawRabbit.vNext" Version="1.10.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Fibon.Messages\Fibon.Messages.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="RawRabbit">
+      <HintPath>C:\Users\mozol\.nuget\packages\rawrabbit\1.10.3\lib\netstandard1.5\RawRabbit.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
