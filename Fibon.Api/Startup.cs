@@ -1,4 +1,5 @@
 ﻿using Fibon.Api.Framework;
+using Fibon.Api.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +29,7 @@ namespace Fibon.Api
         {
             // Add framework services.
             services.AddMvc();
+            services.AddSingleton<IRepository>(_ => new InMemoryRepository());
             services.Configure<RabbitMqOptions>(Configuration.GetSection("rabbitmq"));
             ConfigureRabbitMq(services);
         }
