@@ -1,5 +1,4 @@
 ﻿using Fibon.Messages.Commands;
-using Fibon.Messages.Events;
 using Fibon.Service.Framework;
 using Fibon.Service.Handlers;
 using Microsoft.AspNetCore.Builder;

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
-using Fibon.Messages.Commands;
+﻿using Fibon.Messages.Commands;
 using Fibon.Messages.Events;
 using RawRabbit;
+using System.Threading.Tasks;
 
 namespace Fibon.Service.Handlers
 {
@@ -21,8 +20,10 @@ namespace Fibon.Service.Handlers
             {
                 case 0:
                     return 0;
+
                 case 1:
                     return 1;
+
                 default:
                     return Fib(n - 2) + Fib(n - 1);
             }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Fibon.Api.Repository;
+﻿using Fibon.Api.Repository;
 using Fibon.Messages.Events;
-using RawRabbit;
+using System.Threading.Tasks;
 
 namespace Fibon.Api.Handlers
 {
@@ -12,7 +8,7 @@ namespace Fibon.Api.Handlers
     {
         private readonly IRepository _repository;
 
-        public ValueCalculatedEventHandler( IRepository repository)
+        public ValueCalculatedEventHandler(IRepository repository)
         {
             _repository = repository;
         }
