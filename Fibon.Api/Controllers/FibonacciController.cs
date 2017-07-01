@@ -24,8 +24,9 @@ namespace Fibon.Api.Controllers
             int? calculatedValue = _repository.Get(number);
             if (calculatedValue.HasValue)
             {
-                return Content(calculatedValue.ToString())
+                return Content(calculatedValue.ToString());
             }
+
             return NotFound();
         }
 
